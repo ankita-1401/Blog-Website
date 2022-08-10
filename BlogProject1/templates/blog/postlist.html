@@ -1,0 +1,14 @@
+{%extends 'blog/base.html'%}
+{%block title_block%}
+Programming Languages Blog Home Page
+{%endblock%}
+
+{%block content%}
+<h1>PL's Blog</h1>
+{%for post in post_list%}
+<a href="{{post.get_absolute_url}}"><h2>{{post.title}}</h2></a>
+
+<p id='date'>Publish on:{{post.publish}} by {{post.author}}</p>
+{{post.body|truncatewords:30}}
+{%endfor%}
+{%endblock%}

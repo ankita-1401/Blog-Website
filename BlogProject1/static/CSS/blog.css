@@ -1,0 +1,24 @@
+.content{
+  background:seashell;
+  width:55%;
+  float:left;
+}
+.sidebar{
+  background:yellow;
+  width:45%;
+  float:right;
+}
+h1{
+  text-align: center;
+  border-bottom: 1px solid red;
+  padding-bottom: 10px;
+}
+body{
+  color:black;
+  background:wheat;
+}
+#date{
+  color: blue;
+  font-size: 14px;
+  font-style: italic;
+}
